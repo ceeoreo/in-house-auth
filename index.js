@@ -1,8 +1,9 @@
 const submitButton = document.getElementById('submit-button');
+const form = document.getElementById('form');
 const headerMessage = document.getElementById('header-message');
 const email = document.getElementById('email');
 
-submitButton.addEventListener("click", (event) => {
+form.addEventListener("submit", (event) => {
   event.preventDefault();
 
   let loggedPage = document.createElement('a');
