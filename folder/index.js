@@ -1,7 +1,7 @@
-const submitButton = document.getElementById('submit-button');
 const form = document.getElementById('form');
 const headerMessage = document.getElementById('header-message');
-const email = document.getElementById('email');
+const email = form.elements.user_email.value;
+const password = form.elements.user_password.value;
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
